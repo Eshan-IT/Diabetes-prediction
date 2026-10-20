@@ -28,7 +28,6 @@ diabetes-prediction/
 ## How to run
 ```bash
 pip install -r requirements.txt
-python main.py               # trains, evaluates, saves model
 streamlit run app/app.py     # opens the prediction web app
 ```
 
@@ -38,8 +37,7 @@ streamlit run app/app.py     # opens the prediction web app
 - Imputer and scaler are fitted on the training split only (no data leakage)
   and saved so the web app applies identical preprocessing.
 - Best model is chosen by ROC-AUC. Recall matters most for a screening task.
-- Dataset source: Pima Indians Diabetes (UCI / Kaggle). The Kaggle link in
-  your notes is a different, larger dataset with other columns.
+- Dataset source: Pima Indians Diabetes (UCI / Kaggle). 
 =======
 # Diabetes-prediction
 Diabetes prediction web app using machine learning. Compares 5 classifiers on the Pima Indians dataset and deploys the best one (Random Forest, ROC-AUC 0.82) with Streamlit.
@@ -47,4 +45,4 @@ Diabetes prediction web app using machine learning. Compares 5 classifiers on th
 A supervised binary classification project that predicts whether a patient is diabetic from 8 health measurements (Glucose, BMI, Age, Insulin, etc.). It cleans the data, trains Logistic Regression, KNN, SVM, Decision Tree and Random Forest (plus XGBoost if installed), evaluates them with a confusion matrix, precision, recall, F1 and ROC-AUC, and serves the best model through a Streamlit app.
 
 ⚠️ Educational project, not a medical diagnosis.
->>>>>>> fe7aecf50ce2d48c5bc2359f7f69d567a3a8f0b9
+
