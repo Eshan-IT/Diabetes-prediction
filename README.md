@@ -28,7 +28,6 @@ diabetes-prediction/
 ## How to run
 ```bash
 pip install -r requirements.txt
-python main.py               # trains, evaluates, saves model
 streamlit run app/app.py     # opens the prediction web app
 ```
 
